@@ -1,0 +1,17 @@
+[project]
+name = "arthur-game"
+version = "0.1.0"
+description = "A sci-fi tower defense game with 8 unique tower types"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pygame-ce>=2.5.6",
+    "pygbag>=0.9.2",
+]
+
+[project.scripts]
+arthur-game = "arthur_game.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

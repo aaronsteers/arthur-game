@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip3 install:*)",
+      "Bash(python3:*)",
+      "Bash(xargs:*)",
+      "Bash(cat:*)",
+      "Bash(python main.py:*)",
+      "Bash(uv init:*)",
+      "Bash(uv add:*)",
+      "Bash(uv run python:*)",
+      "Bash(pkill:*)",
+      "Bash(uv run:*)",
+      "Bash(grep:*)"
+    ]
+  }
+}
