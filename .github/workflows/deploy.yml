@@ -19,16 +19,16 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version: '3.13'
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pygbag
+          pip install pygbag pygame-ce
 
       - name: Build with Pygbag
         run: |
-          pygbag --build main.py
+          pygbag --build src/arthur_game/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2

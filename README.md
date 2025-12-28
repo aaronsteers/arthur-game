@@ -2,6 +2,8 @@
 
 A sci-fi tower defense game built with Pygame Community Edition, featuring 8 unique tower types with stunning visual effects!
 
+**[🎮 Play Now on GitHub Pages!](https://aaronsteers.github.io/arthur-game/)**
+
 ## Features
 
 - **16:9 Widescreen Display** (1280x720)
@@ -111,10 +113,29 @@ arthur-game/
 
 To build for web deployment:
 ```bash
-uv run pygbag src/arthur_game/
+uv run pygbag --build src/arthur_game/
 ```
 
-Then open your browser to `http://localhost:8000`
+The built files will be in `src/arthur_game/build/web/`.
+
+### GitHub Pages Deployment
+
+The game is automatically deployed to GitHub Pages when you push to the `main` branch:
+
+1. **Enable GitHub Pages** in your repository settings:
+   - Go to Settings → Pages
+   - Source: "GitHub Actions"
+
+2. **Push your changes** to trigger the build:
+   ```bash
+   git add .
+   git commit -m "Deploy to GitHub Pages"
+   git push
+   ```
+
+3. **Visit your game** at: `https://[username].github.io/arthur-game/`
+
+The deployment workflow (`.github/workflows/deploy.yml`) automatically builds and deploys the game using Pygbag.
 
 ## License
 

@@ -11,7 +11,8 @@
       "Bash(uv run python:*)",
       "Bash(pkill:*)",
       "Bash(uv run:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(pgrep:*)"
     ]
   }
 }
